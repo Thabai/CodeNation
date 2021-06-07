@@ -1,27 +1,21 @@
-//  for (var i = 0; i < 3; i++){
-//     for (var j = 0; j < 2; j++){
-//     console.log("   |  |  "); 
-//     }
-//     if(i !== 2){
-//       console.log("-----------");
-//     }
-// }
-// let grid = [
-//     ["[  ]","[ x ]","[ o ]"],
-//     ["[  ]","[ x ]","[ o ]"],
-//     ["[  ]","[  ]","[ o ]"]
-// ];
 
-// for (var i = 0; i < grid.length; i++){
-//     var line ="";
-//     for (var j = 0; j < grid[i].length; j++){
-//         line = line+grid[i][j]; 
-//     }
-//     console.log(line);
-//     if(i !== 2){
-//       console.log("------------");
-//     }
-// }
+
+let grid = [
+    ["[  ]","[ x ]","[ o ]"],
+    ["[  ]","[ x ]","[ o ]"],
+    ["[  ]","[  ]","[ o ]"]
+];
+
+for (var i = 0; i < grid.length; i++){
+    var line ="";
+    for (var j = 0; j < grid[i].length; j++){
+        line = line+grid[i][j]; 
+    }
+    console.log(line);
+    if(i !== 2){
+      console.log("------------");
+    }
+}
 
 
 // var num = (Math.random()*10);
