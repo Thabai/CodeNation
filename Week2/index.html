@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Styles/main.css">
     <title>Create HTML about me</title>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Noto+Sans+JP:wght@100&family=Pacifico&display=swap');
+ </style>
 </head>
+
 <body>
-    <div>
-    <img src="https://i1.wp.com/looks-awesome.com/wp-content/uploads/2019/04/How-to-Write-an-Engaging-About-Me-Page-for-a-WordPress-Website.jpg?w=810&ssl=1" 
-    alt ="img about me">
+<img id="img" src="https://i1.wp.com/looks-awesome.com/wp-content/uploads/2019/04/How-to-Write-an-Engaging-About-Me-Page-for-a-WordPress-Website.jpg?w=810&ssl=1" alt ="img about me">
+<div>
+    <h2>Carly Morris</h2>
 </div>
+
 <div>
     <h2>Favourite food</h2>
 <ul>
@@ -36,13 +41,31 @@
     <h2>Week1 target progress</h2>
     <p>Created github repo with progress during every day and helped create images for gam jam</p>
 </div>
+
+<div>
+    <h2>Let me know what you think</h2>
+    <p contenteditable="true" spellcheck="true">Type Here</p>
+    <button type="submit">Submit</button>
+</div>
+
+<div>
 <footer>
     <h2>Useful info</h2>
-    <ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-    target="_blank">JS</a></li>
-<li><a href="https://www.freecodecamp.org/learn" target="_blank">freecodecamp</a></li>
-    </ul>
+
+   <a class="btn" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+    target="_blank">
+    <span>JS</span>
+   </a>
+
+   <a class="btn" href="https://www.freecodecamp.org/learn" target="_blank">
+    <span>FCC</span>
+   </a>
+
+   <a class="btn" href="form.html" target="_blank">
+    <span>Sign up for codenation</span>
+   </a>
+
 </footer>
+</div>
 </body>
 </html>
