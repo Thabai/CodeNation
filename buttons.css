@@ -1,0 +1,178 @@
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10% auto;
+    justify-content: center;
+    background: linear-gradient(0.75turn, #3f87a6, #ebf8e1, #f69d3c);
+    animation: gradient 30s ease infinite;
+    background-size: 150%, 150%; 
+}
+
+ @keyframes gradient {
+        0% {
+            background-size:inherit;
+            background-image: url(https://wearecodenation.com/static/Long-logo-c-6b1b26f34aa37a48ac086ab2340456a2.png);
+            background-repeat: no-repeat;
+        }
+        50% {
+            background-position: 75% 75%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+  
+
+div {
+    display:grid;
+    justify-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+}
+
+/* web ani */
+.web {
+    margin-top: 100%;
+    width: 250px;
+    height: 150px;
+    background-color: rgb(228, 180, 78);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.web:hover {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    animation-name: web; 
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+     } 
+    
+    
+@keyframes web {     
+    0% { background-color: rgb(43, 92, 226); 
+        transform:scale(50%);    
+}
+    50% { background-color: rgb(30, 62, 150); 
+    box-shadow: 6px 6px 0 rgb(12, 116, 116);   
+}     
+    100% { background-color: rgb(87, 110, 168); 
+        box-shadow: 6px 6px  0 black;
+
+}}
+
+/*fbook ani*/
+.fbook {
+    width: 250px;
+    height: 250px;
+    background: rgb(228, 180, 78);
+    border-radius: 200px;
+    transition: 5s;
+}
+
+.fbook:hover {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    animation-name: fbook; 
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+     } 
+    
+    
+@keyframes fbook {     
+    0% { background-color: rgb(87, 110, 168); 
+  
+}
+    50% { background-color: rgb(30, 62, 150); 
+  
+}     
+    100% { background-color: rgb(87, 110, 168); 
+        box-shadow: 6px 6px  0 black;
+}}
+
+/* img ani*/
+.cn {
+    background: whitesmoke;
+    border-radius: 20%;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.cn:hover {
+    background: white;
+    transform: rotate(360deg);
+    transition-duration: 5s;
+}
+
+/* insta*/
+.insta {
+    width: 200px;
+    height: 0px;
+    border-left: 0px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid rgb(228, 180, 78);
+    border-radius: 3px;
+    background: rgb(96, 96, 202);
+    transition: 2s;
+}
+
+.insta:hover {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    animation-name: insta; 
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+     } 
+    
+    
+@keyframes insta {     
+    0% { background-color: rgb(43, 92, 226);   
+}
+    50% { background-color: rgb(30, 62, 150); 
+  
+}     
+    100% { background-color: rgb(87, 110, 168); 
+        box-shadow: 6px 6px  0 black;
+}}
+
+/* twit*/
+.twit{
+    margin-top: 100%;
+    width: 250px;
+    height: 150px;
+    transform: skew(20deg);
+    border-radius: 3px;
+    background: rgb(228, 180, 78);
+}
+
+
+.twit:hover {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    animation-name: twit; 
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+     } 
+    
+    
+@keyframes twit {     
+    0% { background-color: rgb(43, 92, 226);  
+        transform:rotate(20deg); 
+}
+    50% { background-color: rgb(30, 62, 150); 
+  
+}     
+    100% { background-color: rgb(87, 110, 168); 
+        box-shadow: 6px 6px  0 black;
+}}
