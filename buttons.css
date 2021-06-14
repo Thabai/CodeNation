@@ -13,8 +13,9 @@ body {
  @keyframes gradient {
         0% {
             background-size:inherit;
-            background-image: url(https://wearecodenation.com/static/Long-logo-c-6b1b26f34aa37a48ac086ab2340456a2.png);
+            image: url(https://wearecodenation.com/static/Long-logo-c-6b1b26f34aa37a48ac086ab2340456a2.png);  
             background-repeat: no-repeat;
+            
         }
         50% {
             background-position: 75% 75%;
@@ -64,7 +65,7 @@ a:focus {
     
 @keyframes web {     
     0% { background-color: rgb(43, 92, 226); 
-        transform:scale(50%);    
+          
 }
     50% { background-color: rgb(30, 62, 150); 
     box-shadow: 6px 6px 0 rgb(12, 116, 116);   
@@ -96,7 +97,7 @@ a:focus {
     
 @keyframes fbook {     
     0% { background-color: rgb(87, 110, 168); 
-  
+     
 }
     50% { background-color: rgb(30, 62, 150); 
   
