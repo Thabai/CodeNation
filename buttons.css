@@ -5,7 +5,7 @@ body {
     flex-wrap: wrap;
     margin: 10% auto;
     justify-content: center;
-    background: linear-gradient(0.75turn, #3f87a6, #ebf8e1, #f69d3c);
+    background: linear-gradient(0.75turn, #06127c, #ebf8e1, #f69d3c);
     animation: gradient 30s ease infinite;
     background-size: 150%, 150%; 
 }
@@ -109,8 +109,7 @@ a:focus {
 .cn {
     background: whitesmoke;
     border-radius: 20%;
-    margin-bottom: 60px;
-    margin-top: 20px;
+    margin: 60px;
 }
 
 .cn:hover {
@@ -127,7 +126,7 @@ a:focus {
     border-right: 150px solid transparent;
     border-bottom: 100px solid rgb(228, 180, 78);
     border-radius: 3px;
-    background: rgb(96, 96, 202);
+    background: rgb(102, 102, 250);
     transition: 2s;
 }
 
