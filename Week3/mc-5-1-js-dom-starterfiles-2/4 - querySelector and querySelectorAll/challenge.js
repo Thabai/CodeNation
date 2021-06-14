@@ -1,5 +1,6 @@
 
 // Use a for loop to display all even items to have text colour “lightgreen”
+// nth-child(even) makes first entry even no
 const listItems = document.querySelectorAll("li:nth-child(even)"); 
 console.log(listItems); 
 console.log(listItems.length);
