@@ -5,7 +5,7 @@ let cells = document.getElementsByClassName("cell");
 // Creates a default grid
 function defaultGrid() {
     makeRows(3);
-    makeColumns(30);
+    makeColumns(31);
 }
 
 // Takes (rows, columns) input and makes a grid
@@ -34,7 +34,7 @@ defaultGrid();
 let stars = [5, 12, 20, 28];
 let holes = [7, 11, 18, 25, 29];
 
-function makeSH() {
+function createMap() {
     for (i = 0; i < stars.length; i++) {
         let star = document.getElementById('1-'+stars[i]);
       star.classList.add('stars');
@@ -45,24 +45,54 @@ function makeSH() {
         hole.classList.add('holes');
     }
 }
-makeSH();
+createMap();
 
 
-player1 = 0;
-player2 = 0;
+let player1 = 0;
+let player2 = 0;
+// "0-"+player1;
+// "2-"+player2;
 
 
+document.querySelector('.btn-roll').addEventListener('click', function(){
+    let posLast = document.getElementById('0-'+player1);
+    posLast.classList.remove('player1');
+//	if (rollDice) {
+		// 1. random number
+		let dice = Math.floor(Math.random() * 6) +1;
 
-// document.querySelector('.btn-roll').addEventListener('click', function(){
-// 	if (gamePlaying) {
-// 		// 1. random number
-// 		var dice = Math.floor(Math.random() * 6) +1;
+		// 2. display result
+        let diceDOM = document.querySelector('.dice');
+        diceDOM.style.display = 'block';
+        diceDOM.src = 'images/dice' + dice + '.png'; 
 
-// 		// 2. display result
-//         var diceDOM = document.querySelector('.dice');
-//         diceDOM.style.display = 'block';
-//         diceDOM.src = 'images/dice' + dice + '.png';
+// function updatePlayerPos(){
 
-// 		// 3. Update round score if the rolled number is not 1
-// 		if (dice !== 1) {
+            player1 += dice; 
+    
+        if (stars.includes(player1)){
+            player1 += 5; 
+        }
+        if(holes.includes(player1)){
+            player1 -= 3;
+        } 
+// }})
+        
+if (player1 >= 30) {
+    //winer situation
+
+    //remove button
+
+    //add reset button
+}
+// function decoratePos() {
+        let pos = document.getElementById('0-'+player1);
+        
+        pos.classList.add('player1');
+        
+// }
+// decoratePos()
+        // "0-"+player1;
+   // }
+    })
 
