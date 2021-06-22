@@ -50,15 +50,11 @@ a:hover {
   flex: 1;
 }
 
-
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding:50px;
 }
-
-
-
 
 @media all and (max-width:1000px) {
   .flex-nav ul {
@@ -82,9 +78,8 @@ a:hover {
 
   .flex-nav li {
     width: 100%;
-
-
-.social {
+    
+  }
+  .social {
   flex: 25;
 }}
-

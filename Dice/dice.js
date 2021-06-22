@@ -2,7 +2,7 @@ const container = document.getElementById("container");
 let rows = document.getElementsByClassName("gridRow");
 let cells = document.getElementsByClassName("cell");
 
-// Creates a default grid sized 16x16
+// Creates a default grid
 function defaultGrid() {
     makeRows(3);
     makeColumns(30);
